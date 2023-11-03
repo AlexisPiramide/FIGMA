@@ -1,0 +1,44 @@
+.cuerpo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 70%;
+    background-color: #9AB1ED;
+}
+
+.usuario > h2{
+    padding-left: 10px;
+}
+
+.cuerpo > form{
+    padding: 10px 40px 40px 40px;
+    border: 2px solid #123A63;
+    background-color: white;
+    margin: 10%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Righteous';
+    font-size: 24px;
+}
+
+.cuerpo > form > input{
+    border:3px solid #123A63;
+    width:300px;
+    height: 30px;
+    color: gray;
+    text-align: center; 
+    font-family: 'Righteous';
+    font-size: 24px;
+    margin: 10px;
+}
+
+.cuerpo > form > input:nth-child(4){
+    border:2px solid #123A63;
+    width:200px;
+    height: 50px;
+    color: #FFF;
+    background-color: #123A63;
+    text-align: center;
+}

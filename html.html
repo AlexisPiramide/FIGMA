@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <nav>
-        <img src="https://placehold.co/80x80" alt="">
-        <h2>
-            Inicio
-        </h2>
+        <!--Logo provisional-->
+        
+        <img src="img/Logo.png" alt="">
+        <img src="img/Menu.png" alt="">
+        <h2><a href="www.google.es">Inicio</a></h2>
+        
         <div class="navegador">
             <input type="text" placeholder="">
-            <button type="submit"><img src="https://placehold.co/4x4" alt=""></button></div>
-        <h2>
-            Seccion Articulos
+            <button type="submit">
+                <img src="/img/Search.png" onmouseover="this.src='/img/AlternativeSearch.png'" onmouseout="this.src='/img/Search.png'">
+            </button></div>
+        <h2><a href="www.google.es"> Seccion Articulos</a>
+           
         </h2>
         <div class="usuario">
-            <img src="https://placehold.co/80x80" alt="">
+            <a href="www.google.es">
+            <img src="/img/User.png">
            
-            <h2>Zona<br> Usuario</h2>
+            <h2>Zona<br> Usuario</h2></a>
         </div>
+        <img src="img/Logo.png" alt="">
     </nav>
     <div class="cuerpo">
         <form action="/action_page.php">
@@ -32,10 +39,12 @@
             <input type="submit" value="Iniciar Sesion">
           </form> 
     </div>
+    
     <footer>
-        <img src="https://placehold.co/80x80" alt="">
-        <img src="https://placehold.co/80x80" alt="">
-        <img src="https://placehold.co/80x80" alt="">
+        <!-- No sabia que poner en los enlaces-->
+        <a href="https://twitter.com/rickroll?lang=es"><img src="/img/Twitter.png" link></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/img/Youtube.png" link></a>
+        <a href="https://www.facebook.com/rickroll548/?locale=es_LA"><img src="/img/Facebook.png" link></a>
     </footer>
 </body>
 </html>

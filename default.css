@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Neuton');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-body{
-    height: 100%;
-}
+
 nav,footer{
     background-color: #123A63;
     height: 15%;
@@ -10,87 +8,209 @@ nav,footer{
 }
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     font-family: 'Neuton';
+    padding: 20px;
 }
-nav > div.usuario,nav > div.navegador{
+
+nav > div.usuario > a,nav > div.navegador{
     display: flex;
 }
 
-nav > div.navegador{
-    background-color: white;
-    padding: 5px;
-    justify-content: space-between;
-    width:max-content;
-    gap:10px
-}
-
-.navegador > input {
-    border: none;
-    width:500px;
-}
-.navegador button{
-    border-left: 2px solid #123A63;
-    border-right: none;
-    border-top: none;
-    border-bottom: none;
-}
-
-.navegador img {
-    object-fit:fill;
-    width: 40px;
-    height: 40px;
-}
-.cuerpo{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 70%;
-    background-color: #9AB1ED;
-}
-
-.usuario > h2{
-    padding-left: 10px;
+a:link {
+    text-decoration: none;
+    color: white;
+    align-self: center;
 }
 
 
-.cuerpo > form{
-    padding: 10px 40px 40px 40px;
-    border: 2px solid #123A63;
-    background-color: white;
-    margin: 10%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Righteous';
-    font-size: 24px;
+@media screen and (min-width: 1000px) {
+
+    body{
+        height: 100vh;
+    }
+
+    nav > img:nth-child(2){
+        display: none;
+    }
+
+    nav > img:nth-child(7){
+        display: none;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    nav > img{
+        width: 120px;
+        height: 120px;
+    }
+    
+  
+    .usuario > a > img{
+        width: 80px;
+        height: 80px;
+        align-self: center;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+    
+    .usuario > h2{
+        align-self: center;
+        padding-bottom: 10px;
+    }
+    .usuario > a:link{
+        padding-bottom: 10px;
+    }
+    
+    nav > div.navegador{
+        background-color: white;
+        padding: 5px;
+        justify-content: space-between;
+        width:max-content;
+        gap:10px;
+    }
+    
+    .navegador > button{
+        background-color: white;    
+    }
+    
+    .navegador > button > img:hover{
+        background-color: #123A63;   
+        border-radius: 5px;
+    }
+    
+    body{
+        background-color: #123A63;
+    }
+    .navegador > input {
+        border: none;
+        width:500px;
+    }
+    .navegador button{
+        border-left: 2px solid #123A63;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .navegador img {
+        object-fit:fill;
+        width: 40px;
+        height: 40px;
+    }
+    .cuerpo{
+        height: 70%;
+        background-color: #9AB1ED;
+    }
+    
+    footer{
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    footer > a > img{
+        height: 80px;
+        width: 80px;
+    }
 }
 
-.cuerpo > form > input{
-    border:3px solid #123A63;
-    width:300px;
-    height: 30px;
-    color: gray;
-    text-align: center; 
-    font-family: 'Righteous';
-    font-size: 24px;
-    margin: 10px;
-}
 
-.cuerpo > form > input:nth-child(4){
-    border:2px solid #123A63;
-    width:200px;
-    height: 50px;
-    color: #FFF;
-    background-color: #123A63;
-    text-align: center;
-}
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
+@media screen and (max-width: 999px) {
+
+    body{
+        height: 100% screen;
+        width: 100% screen;
+    }
+    
+    nav{
+        gap: 5px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    nav > img:nth-child(1){
+        display: none;
+    }
+    
+    nav > img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+ 
+    .usuario {
+        display: none;
+    }
+    
+    
+    nav > h2 {
+        display: none;
+    }
+    .navegador{
+        width: 75% screen ;
+    }
+    
+    nav > div.navegador{
+        background-color: white;
+        justify-content: space-between;
+        width:max-content;
+        gap:10px;
+    }
+    
+    .navegador > button{
+        background-color: white;    
+    }
+    
+    
+    .navegador > button > img:hover{
+        background-color: #123A63;   
+        border-radius: 5px;
+    }
+    
+    body{
+        background-color: #123A63;
+    }
+    .navegador > input {
+        width: 100%;
+        border: none;
+        width:max-content;
+    }
+    .navegador button{
+        border-left: 2px solid #123A63;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    
+    .navegador img {
+        object-fit:fill;
+        width: 40px;
+        height: 40px;
+    }
+    .cuerpo{
+        height: 70%;
+        background-color: #9AB1ED;
+    }
+    
+    footer{
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    footer > a > img{
+        height: 80px;
+        width: 80px;
+    }
+    
 }
