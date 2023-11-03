@@ -1,44 +1,116 @@
-.cuerpo{
+@media screen and (min-width: 1000px) {
+/* Estilos para el cuerpo principal */
+.cuerpo {
     display: flex;
+    align-items: center;
     align-content: center;
     justify-content: center;
     height: 70%;
     background-color: #9AB1ED;
+    width: 100% screen;
 }
 
-.usuario > h2{
+/* Estilos para el título en el div de usuario */
+.usuario > h2 {
     padding-left: 10px;
+    font-size: 2em;
 }
 
-.cuerpo > form{
-    padding: 10px 40px 40px 40px;
+/* Estilos para el formulario */
+.cuerpo > form {
+    padding: 10px;
     border: 2px solid #123A63;
     background-color: white;
-    margin: 10%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Righteous';
     font-size: 24px;
+    width: 22em;
+    height: 20em;
 }
 
-.cuerpo > form > input{
-    border:3px solid #123A63;
-    width:300px;
-    height: 30px;
+/* Estilos para los campos de entrada de texto */
+.cuerpo > form > input {
+    border: 3px solid #123A63;
+    width: 10em;
+    height: 1em;
     color: gray;
-    text-align: center; 
+    text-align: center;
     font-family: 'Righteous';
-    font-size: 24px;
+    font-size: 2em;
     margin: 10px;
 }
 
-.cuerpo > form > input:nth-child(4){
-    border:2px solid #123A63;
-    width:200px;
-    height: 50px;
+/* Estilos específicos para el último campo de entrada de texto */
+.cuerpo > form > input:nth-child(4) {
+    border: 2px solid #123A63;
+    width: 8em;
+    height: 2em;
     color: #FFF;
     background-color: #123A63;
     text-align: center;
 }
+}
+
+
+@media screen and (max-width: 999px) {
+    /* Estilos para el cuerpo principal */
+    .cuerpo {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 70%;
+        background-color: #9AB1ED;
+        width: 100% screen;
+    }
+    
+    /* Estilos para el título en el div de usuario */
+    .usuario > h2 {
+        padding-left: 10px;
+        font-size: 2em;
+    }
+    
+    /* Estilos para el formulario */
+    .cuerpo > form {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 10px;
+        border: 2px solid #123A63;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Righteous';
+        font-size: 24px;
+        width: 14em;
+        height: 20em;
+    }
+    
+    /* Estilos para los campos de entrada de texto */
+    .cuerpo > form > input {
+        border: 3px solid #123A63;
+        width: 10em;
+        height: 2em;
+        color: gray;
+        text-align: center;
+        font-family: 'Righteous';
+        font-size: 1em;
+        margin: 10px;
+    }
+    
+    /* Estilos específicos para el último campo de entrada de texto */
+    .cuerpo > form > input:nth-child(4) {
+        border: 2px solid #123A63;
+        width: 8em;
+        height: 2em;
+        color: #FFF;
+        background-color: #123A63;
+        text-align: center;
+    }
+    }

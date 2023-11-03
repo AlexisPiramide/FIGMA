@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Neuton');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+body{
+    background:#123A63;
+
+
+    width: 100%;
+}
 nav,footer{
     background-color: #123A63;
     height: 15%;
@@ -23,6 +29,18 @@ a:link {
     align-self: center;
 }
 
+footer{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer > a > img{
+    height: 80px;
+    width: 80px;
+}
 
 @media screen and (min-width: 1000px) {
 
@@ -30,25 +48,49 @@ a:link {
         height: 100vh;
     }
 
-    nav > img:nth-child(2){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav > div{
+        display: flex;
+        width: 100%;
+    }
+
+    /*Eliminia Logo de modo movil*/
+    div:nth-child(6){
+        display: none;
+    }
+    /*Primer div con las imagenes y logo*/
+    nav > div:nth-child(1){
+        width: 5%;
+    }
+
+    nav > div > img:nth-child(2){
+        display: none;
+    }
+    
+    nav > div > img:nth-child(2){
         display: none;
     }
 
     nav > img:nth-child(7){
         display: none;
     }
-
-    nav{
-        flex-direction: row;
-        justify-content: space-around;
-    }
     
-    nav > img{
+    nav > div > img{
         width: 120px;
         height: 120px;
     }
+    nav > h2{
+        size: 5%;
+    }
     
-  
+    /*Usuario*/
+    .usuario{
+        width: 10%;
+    }
     .usuario > a > img{
         width: 80px;
         height: 80px;
@@ -64,13 +106,16 @@ a:link {
     .usuario > a:link{
         padding-bottom: 10px;
     }
-    
-    nav > div.navegador{
+
+    /*Navegacion*/
+
+
+    .navegador{
         background-color: white;
         padding: 5px;
         justify-content: space-between;
         width:max-content;
-        gap:10px;
+        width: 30%
     }
     
     .navegador > button{
@@ -82,12 +127,9 @@ a:link {
         border-radius: 5px;
     }
     
-    body{
-        background-color: #123A63;
-    }
     .navegador > input {
         border: none;
-        width:500px;
+        width:80%;
     }
     .navegador button{
         border-left: 2px solid #123A63;
@@ -100,23 +142,6 @@ a:link {
         object-fit:fill;
         width: 40px;
         height: 40px;
-    }
-    .cuerpo{
-        height: 70%;
-        background-color: #9AB1ED;
-    }
-    
-    footer{
-        padding: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    footer > a > img{
-        height: 80px;
-        width: 80px;
     }
 }
 
@@ -135,17 +160,16 @@ a:link {
         justify-content: space-between;
     }
 
-    nav > img:nth-child(1){
+    /*Primer div con las imagenes y logo*/
+    nav > div:nth-child(1) > img:nth-child(1){
         display: none;
     }
     
-    nav > img{
+    nav > div > img{
         width: 50px;
         height: 50px;
     }
     
-    
- 
     .usuario {
         display: none;
     }
@@ -174,10 +198,7 @@ a:link {
         background-color: #123A63;   
         border-radius: 5px;
     }
-    
-    body{
-        background-color: #123A63;
-    }
+
     .navegador > input {
         width: 100%;
         border: none;
@@ -195,22 +216,5 @@ a:link {
         width: 40px;
         height: 40px;
     }
-    .cuerpo{
-        height: 70%;
-        background-color: #9AB1ED;
-    }
-    
-    footer{
-        padding: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    footer > a > img{
-        height: 80px;
-        width: 80px;
-    }
-    
+
 }
