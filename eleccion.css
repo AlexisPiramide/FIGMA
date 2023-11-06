@@ -1,0 +1,28 @@
+div.cuerpo{
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    background-color: #9AB1ED;
+    display: flex;
+    gap: 3em;
+}
+
+form > input {
+  
+    padding: 10px;
+    border: 2px solid #123A63;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Righteous';
+    font-size: 24px;
+    width: 10em;
+    height: 10em;
+    font-size: x-large;
+    
+    text-align: center;
+}
+   
