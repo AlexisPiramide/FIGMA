@@ -1,3 +1,7 @@
+body{
+    margin:0;
+}
+
 div.cuerpo{
     align-items: center;
     justify-content: center;
