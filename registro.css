@@ -1,0 +1,109 @@
+body{
+    margin:0;
+}
+
+@media screen and (min-width: 1000px) {
+    div.cuerpo{
+        align-items: center;
+        justify-content: center;
+        height: 70% min-content;
+        background-color: #9AB1ED;
+        display: flex;
+        gap: 3em;
+    }
+    form{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        width: 70%;
+        gap:40px ;
+        border: 5px solid #123A63;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10em;
+    }
+    form > h2{
+    
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    form > input {
+        padding: 10px;
+        border: 5px solid #123A63;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Righteous';
+        font-size: 24px;
+        width: 14em;
+        height: 1.5em;
+        font-size: x-large;
+        text-align: center;
+    }
+    
+    .unico{
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+    
+    .unico:nth-child(7){
+        border: none;
+        background-color: #123A63;
+        color: white;
+        width: 11em;
+        height: 2em;
+    }  
+}
+
+@media screen and (max-width: 999px) {
+    div.cuerpo{
+        align-items: center;
+        justify-content: center;
+        height: 70% min-content;
+        background-color: #9AB1ED;
+        display: flex;
+        gap: 3em;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap:40px ;
+        border: 5px solid #123A63;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10em;
+    }
+    form > h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    form > input {
+        padding: 10px;
+        border: 5px solid #123A63;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Righteous';
+        font-size: 24px;
+        width: 14em;
+        height: 1.5em;
+        font-size: x-large;
+        text-align: center;
+    }
+
+    
+    :nth-child(7){
+        border: none;
+        background-color: #123A63;
+        color: white;
+        width: 11em;
+        height: 2em;
+        align-self: center;
+    }  
+
+}
