@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Neuton');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+a:visited, a:hover, a:active,a:link {
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+
 body{
     background:#123A63;
 
@@ -23,11 +29,7 @@ nav > div.usuario > a,nav > div.navegador{
     display: flex;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
-    align-self: center;
-}
+
 
 footer{
     padding: 50px;
