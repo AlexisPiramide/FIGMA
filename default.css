@@ -9,9 +9,8 @@ a:visited, a:hover, a:active,a:link {
 
 body{
     background:#123A63;
-
-
     width: 100%;
+    margin:0;
 }
 nav,footer{
     background-color: #123A63;
