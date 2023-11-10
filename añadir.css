@@ -1,3 +1,10 @@
+div.cuerpo > div:first-child >label > img {
+    height: 50px;
+    width: 50px;
+}
+
+
+
 @media screen and (min-width: 1000px) {
 
     div.cuerpo {
@@ -8,6 +15,21 @@
         display: flex;
         gap: 10em;
         gap: 200px;
+    }
+
+    div.cuerpo > div:first-child {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 20em;
+        border: 4px solid #123A63;
+        background-color: white;
+        padding: 40px;
+        border-radius: 40px;
+        width: 10em;
+        align-items: center;
+
     }
 
     div>div>input {
@@ -78,6 +100,7 @@
 @media screen and (max-width: 999px) {
 
     div.cuerpo {
+        text-align: center;
         align-items: center;
         justify-content: center;
         height: 70%;
@@ -88,15 +111,7 @@
 
     }
 
-    div.a {
-        order: 3;
-    }
-
-    div.b {
-        order: 2;
-    }
-
-    div>div.a>input {
+    div.cuerpo > div:first-child {
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -108,7 +123,21 @@
         align-items: center;
     }
 
-    div>div.b>input {
+    div.a {
+        order: 3;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 10em;
+        border: 4px solid #123A63;
+        background-color: white;
+        border-radius: 40px;
+        width: 10em;
+        align-items: center;
+    }
+
+    div.b {
+        order: 2;
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -116,6 +145,28 @@
         border: 4px solid #123A63;
         background-color: white;
         border-radius: 30px;
+        width: 19em;
+        align-items: center;
+    }
+
+   
+    div>div.a>label {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 5em;
+        border: none;
+        width: 5em;
+        align-items: center;
+    }
+
+    div>div.b>input {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 5em;
+        background-color: white;
+        border: none;
         width: 19em;
         align-items: center;
     }
