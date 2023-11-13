@@ -85,7 +85,7 @@ footer > a > img{
         height: 120px;
     }
     nav > h2{
-        size: 5%;
+        width: 5%;
     }
     
     /*Usuario*/
@@ -150,6 +150,7 @@ footer > a > img{
 @media screen and (max-width: 999px) {
 
     body{
+        /*El screen no le gusta pero si no no funciona*/
         height: 100% screen;
         width: 100% screen;
     }

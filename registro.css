@@ -11,7 +11,7 @@ form {
 div.cuerpo {
     align-items: center;
     justify-content: center;
-    height: 70% min-content;
+    height: 70%;
     background-color: #9AB1ED;
     display: flex;
     gap: 3em;

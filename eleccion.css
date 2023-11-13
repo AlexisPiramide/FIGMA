@@ -9,6 +9,7 @@ div.cuerpo{
     background-color: #9AB1ED;
     display: flex;
     gap: 3em;
+    
 }
 
 form > a {

@@ -1,0 +1,14 @@
+img{
+    display: none;
+}
+nav{
+    display: none;
+}
+footer{
+    display: none;
+}
+
+
+div.carta{
+    border-bottom: 1px solid black;
+}
